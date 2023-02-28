@@ -1,41 +1,89 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/white.css">
+	<title>reveal.js</title>
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-        <link rel="stylesheet" href="invitation.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/white.css">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	<link rel="stylesheet" href="invitation.css">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section data-background-image="https://peterzxcvbnm.github.io/Sakura%20background.jpg">
+				<div class="front">
+					<p>Miriam & Peter</p>
+					<p>Wedding Invitation</p>
+				</div>
+			</section>
+			<section class="text" data-background-image="https://peterzxcvbnm.github.io/Sakura%20background.jpg">
+				<div class="row">
+					<div class="column">
+						<p>Hi INSERT_NAME_HERE,</p>
+						<p>
+							We have decided to explore a new chapter in our life. To get a good start into our
+							adventure, we need the help of friends and family. Therefore, we invite you to the start of
+							our journey (also called marriage) for hopefully delicious food, good company, and a cozy
+							time.
+						</p>
+						<p style="text-align: left;">
+							Practical information:<br>
+							Date: October 15th, 2023, 11 am - … <br>
+							Place: <br>
+							Sundeved Centret<br>
+							Stenderup Kirkebakke 4,<br>
+							6400 Sønderborg<br>
+							Denmark<br>
+						</p>
+						<p>
+							There are sleeping possibilities from Friday to Sunday.<br>
+							Please write us a message if you are coming or not before August 15th.<br>
+							We would also like to know whether you want to stay the night(s) and/or have any dietary
+							restrictions.<br>
+						</p>
+
+					</div>
+					<div class="column">
+						<img src="Scotland_selfie.jpg">
+					</div>
+				</div>
+			</section>
 		</div>
+	</div>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+
+		window.addEventListener("mousedown", handleClick, false);
+		window.addEventListener("contextmenu", function (e) { e.preventDefault(); }, false);
+
+		function handleClick(e) {
+			e.preventDefault();
+			if (e.button === 0) Reveal.next();
+			if (e.button === 2) Reveal.prev();
+		}
+	</script>
+</body>
+
 </html>
