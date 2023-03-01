@@ -11,9 +11,9 @@ section {
     font-size: 10vw;
 }
 
-.text p {
+p {
     font-family: "Brush Script MT", cursive;
-    font-size: 24px;
+    font-size: 35px;
 }
 
 .row {
@@ -39,7 +39,13 @@ section {
         width: 100%;
     }
 
-    .text p {
+    .text-section p {
         font-size: small;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .text{
+        margin-top: 10%;
     }
 }
