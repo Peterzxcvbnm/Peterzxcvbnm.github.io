@@ -19,7 +19,7 @@
 <body>
 	<div class="reveal">
 		<div class="slides">
-			<section data-background-image="https://peterzxcvbnm.github.io/Sakura%20background.jpg">
+			<section class="front-section" data-background-image="https://peterzxcvbnm.github.io/Sakura%20background.jpg">
 				<div class="front">
 					<p>Miriam & Peter</p>
 					<p>Wedding Invitation</p>
@@ -36,17 +36,16 @@
 							time.
 						</p>
 						<p style="text-align: left;">
-							Practical information:<br>
-							Date: October 15th, 2023, 11 am - … <br>
+							<b>Practical information:</b><br>
+							Date: <br>
+							October 15th, 2023, 11 am - … <br>
 							Place: <br>
-							Sundeved Centret<br>
-							Stenderup Kirkebakke 4,<br>
-							6400 Sønderborg<br>
-							Denmark<br>
+							Sundeved Centret, Stenderup Kirkebakke 4,<br>
+							6400 Sønderborg, Denmark<br>
 						</p>
 						<p>
 							There are sleeping possibilities from Friday to Sunday.<br>
-							Please write us a message if you are coming or not before August 15th.<br>
+							Please write us a message whether you are coming or not before August 15th.<br>
 							We would also like to know whether you want to stay the night(s) and/or have any dietary
 							restrictions.<br>
 						</p>
@@ -69,10 +68,7 @@
 		// - https://revealjs.com/initialization/
 		// - https://revealjs.com/config/
 		Reveal.initialize({
-			hash: true,
-
-			// Learn about plugins: https://revealjs.com/plugins/
-			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+			disableLayout: true,
 		});
 
 		window.addEventListener("mousedown", handleClick, false);

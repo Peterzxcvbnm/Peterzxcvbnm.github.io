@@ -1,12 +1,11 @@
+
+
 section {
     font-family: "Brush Script MT", cursive;
 }
 
-.front_section {
-    background-image: url('Sakura\ background.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+.front{
+    margin-top: 20%;
 }
 
 .front p {
@@ -17,6 +16,10 @@ section {
 .text p{
     font-family: "Brush Script MT", cursive;
     font-size: 24px;
+}
+
+.row{
+    margin: 25px;
 }
 
 /* Create two equal columns that floats next to each other */
