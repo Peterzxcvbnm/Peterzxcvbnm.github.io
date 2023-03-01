@@ -5,17 +5,17 @@ section {
 }
 
 .front{
-    margin-top: 20%;
+    margin-top: 10%;
 }
 
 .front p {
     font-family: "Brush Script MT", cursive;
-    font-size: 125px;
+    font-size: 10vw;
 }
 
 .text p{
     font-family: "Brush Script MT", cursive;
-    font-size: 24px;
+    font-size: medium;
 }
 
 .row{
