@@ -1,5 +1,10 @@
+@font-face {
+    font-family: "Alex Brush";
+    src: url("AlexBrush-Regular.ttf");
+}
+
 section {
-    font-family: "Brush Script MT", cursive;
+    font-family: "Alex Brush", cursive;
 }
 
 .front {
@@ -7,12 +12,12 @@ section {
 }
 
 .front p {
-    font-family: "Brush Script MT", cursive;
+    font-family: "Alex Brush", cursive;
     font-size: 10vw;
 }
 
 p {
-    font-family: "Brush Script MT", cursive;
+    font-family: "Alex Brush", cursive;
     font-size: 35px;
 }
 
