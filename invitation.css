@@ -1,10 +1,10 @@
 @font-face {
-    font-family: "Alex Brush";
-    src: url("AlexBrush-Regular.ttf");
+    font-family: "vijaya";
+    src: url("fonts/vijaya.ttf");
 }
 
 section {
-    font-family: "Alex Brush", cursive;
+    font-family: "vijaya", cursive;
 }
 
 .front {
@@ -12,12 +12,12 @@ section {
 }
 
 .front p {
-    font-family: "Alex Brush", cursive;
+    font-family: "vijaya", cursive;
     font-size: 10vw;
 }
 
 p {
-    font-family: "Alex Brush", cursive;
+    font-family: "vijaya", cursive;
     font-size: 35px;
 }
 
@@ -51,6 +51,6 @@ p {
 
 @media screen and (min-width: 600px) {
     .text{
-        margin-top: 10%;
+        margin-top: 5%;
     }
 }

@@ -6,7 +6,7 @@ class DanishInvitation extends HTMLElement {
     connectedCallback() {
       this.innerHTML = `
 <div class="text">
-<p>Hej INSERT_NAME_HERE,</p>
+<p>Hej <span class="name">INSERT_NAME_HERE</span>,</p>
 <p>
 Vi har besluttet at udforske et nyt kapitel af vores liv.
 Vi har brug for hjælp fra venner og familie til at få en god start på vores nye eventyr.
@@ -16,7 +16,7 @@ Derfor inviterer vi hermed du/I til starten på vores rejse (også kaldet ægtes
 <b>Praktisk information:</b><br>
 Dato: <br>
 15. oktober 2023 11 - … <br>
-Sted: 
+Sted: <br> 
 Sundeved Centret, Stenderup Kirkebakke 4, <br>
 6400 Sønderborg, Danmark <br>
 </p>

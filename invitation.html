@@ -29,31 +29,7 @@
 			<section class="text-section" data-background-image="https://peterzxcvbnm.github.io/Sakura%20background.jpg">
 				<div class="row">
 					<div class="column">
-						<div class="text">
-							<p>Hi INSERT_NAME_HERE,</p>
-							<p>
-								We have decided to explore a new chapter in our life. To get a good start into our
-								adventure, we need the help of friends and family. Therefore, we invite you to the start
-								of
-								our journey (also called marriage) for hopefully delicious food, good company, and a
-								cozy time.
-							</p>
-							<p style="text-align: left;">
-								<b>Practical information:</b><br>
-								Date: <br>
-								October 15th, 2023, 11 am - … <br>
-								Place: <br>
-								Sundeved Centret, Stenderup Kirkebakke 4,<br>
-								6400 Sønderborg, Denmark<br>
-							</p>
-							<p>
-								There are sleeping possibilities from Friday to Sunday.<br>
-								Please write us a message whether you are coming or not before August 15th.<br>
-								We would also like to know whether you want to stay the night(s) and/or have any dietary
-								restrictions.<br>
-							</p>
-						</div>
-
+						<english-invitation></english-invitation>
 					</div>
 					<div class="column">
 						<img src="Scotland_selfie.jpg">
@@ -70,6 +46,16 @@
 					</div>
 				</div>
 			</section>
+			<section class="text-section" data-background-image="https://peterzxcvbnm.github.io/Sakura%20background.jpg">
+				<div class="row">
+					<div class="column">
+						<german-invitation></german-invitation>
+					</div>
+					<div class="column">
+						<img src="Scotland_selfie.jpg">
+					</div>
+				</div>
+			</section>
 		</div>
 	</div>
 
@@ -78,6 +64,8 @@
 	<script src="plugin/markdown/markdown.js"></script>
 	<script src="plugin/highlight/highlight.js"></script>
 	<script src="languages/danish.js"></script>
+	<script src="languages/english.js"></script>
+	<script src="languages/german.js"></script>
 	<script>
 		// More info about initialization & config:
 		// - https://revealjs.com/initialization/
@@ -90,10 +78,16 @@
 		window.addEventListener("contextmenu", function (e) { e.preventDefault(); }, false);
 
 		function handleClick(e) {
+			if(document.elementFromPoint(e.clientX, e.clientY).className === "controls-arrow") return;
 			e.preventDefault();
 			if (e.button === 0) Reveal.next();
 			if (e.button === 2) Reveal.prev();
 		}
+
+		for(const element of document.getElementsByClassName("name")){
+			element.innerHTML="INSERT_NAME_HERE";
+		} 
+
 	</script>
 </body>
 
