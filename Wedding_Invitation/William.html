@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>reveal.js</title>
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/white.css">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	<link rel="stylesheet" href="invitation.css">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section class="front-section"
+				data-background-image="https://peterzxcvbnm.github.io/Sakura%20background.jpg">
+				<div class="front">
+					<p>Miriam & Peter</p>
+					<p>Wedding Invitation</p>
+				</div>
+			</section>
+			<section class="text-section" data-background-image="https://peterzxcvbnm.github.io/Sakura%20background.jpg">
+				<div class="row">
+					<div class="column">
+						<english-invitation></english-invitation>
+					</div>
+					<div class="column">
+						<img src="Scotland_selfie.jpg">
+					</div>
+				</div>
+			</section>
+			<section class="text-section" data-background-image="https://peterzxcvbnm.github.io/Sakura%20background.jpg">
+				<div class="row">
+					<div class="column">
+						<danish-invitation></danish-invitation>
+					</div>
+					<div class="column">
+						<img src="Scotland_selfie.jpg">
+					</div>
+				</div>
+			</section>
+			<section class="text-section" data-background-image="https://peterzxcvbnm.github.io/Sakura%20background.jpg">
+				<div class="row">
+					<div class="column">
+						<german-invitation></german-invitation>
+					</div>
+					<div class="column">
+						<img src="Scotland_selfie.jpg">
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script src="languages/danish.js"></script>
+	<script src="languages/english.js"></script>
+	<script src="languages/german.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			disableLayout: true,
+		});
+
+		window.addEventListener("mousedown", handleClick, false);
+		window.addEventListener("contextmenu", function (e) { e.preventDefault(); }, false);
+
+		function handleClick(e) {
+			if(document.elementFromPoint(e.clientX, e.clientY).className === "controls-arrow") return;
+			e.preventDefault();
+			if (e.button === 0) Reveal.next();
+			if (e.button === 2) Reveal.prev();
+		}
+
+		for(const element of document.getElementsByClassName("name")){
+			element.innerHTML="William";
+		} 
+
+	</script>
+</body>
+
+</html>
