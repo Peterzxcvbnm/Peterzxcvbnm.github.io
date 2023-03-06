@@ -16,6 +16,10 @@ section {
     font-size: 10vw;
 }
 
+.front a {
+    font-family: "vijaya", cursive;
+}
+
 p {
     font-family: "vijaya", cursive;
     font-size: 35px;
@@ -46,6 +50,9 @@ p {
 
     .text-section p {
         font-size: small;
+    }
+    .front a {
+        font-size: medium;
     }
 }
 
