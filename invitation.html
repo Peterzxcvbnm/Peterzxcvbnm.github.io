@@ -99,8 +99,8 @@
 			if (splitGuests.length > 1) {
 				guests = splitGuests[splitGuests.length - 2] + " & " + splitGuests[splitGuests.length - 1];
 			}
-			if (splitGuests > 2) {
-				guests = splitGuests.subarray(0, splitGuests.length - 2).join(", ") + ", " + guests;
+			if (splitGuests.length > 2) {
+				guests = splitGuests.slice(0, splitGuests.length - 2).join(", ") + ", " + guests;
 			}
 		}else{
 			guests = "INSERT_NAME_HERE";
