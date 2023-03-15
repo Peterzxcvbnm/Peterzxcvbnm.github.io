@@ -24,12 +24,13 @@
 				<div class="front">
 					<p>Miriam & Peter</p>
 					<p>Wedding Invitation</p>
-                    <a href="#/1" class="navigation">English</a>&emsp;
-                    <a href="#/2" class="navigation">Dansk</a>&emsp;
-                    <a href="#/3" class="navigation">Deutsch</a>
+					<a href="#/1" class="navigation">English</a>&emsp;
+					<a href="#/2" class="navigation">Dansk</a>&emsp;
+					<a href="#/3" class="navigation">Deutsch</a>
 				</div>
 			</section>
-			<section class="text-section" data-background-image="https://peterzxcvbnm.github.io/Sakura%20background.jpg">
+			<section class="text-section"
+				data-background-image="https://peterzxcvbnm.github.io/Sakura%20background.jpg">
 				<div class="row">
 					<div class="column">
 						<english-invitation></english-invitation>
@@ -39,7 +40,8 @@
 					</div>
 				</div>
 			</section>
-			<section class="text-section" data-background-image="https://peterzxcvbnm.github.io/Sakura%20background.jpg">
+			<section class="text-section"
+				data-background-image="https://peterzxcvbnm.github.io/Sakura%20background.jpg">
 				<div class="row">
 					<div class="column">
 						<danish-invitation></danish-invitation>
@@ -49,7 +51,8 @@
 					</div>
 				</div>
 			</section>
-			<section class="text-section" data-background-image="https://peterzxcvbnm.github.io/Sakura%20background.jpg">
+			<section class="text-section"
+				data-background-image="https://peterzxcvbnm.github.io/Sakura%20background.jpg">
 				<div class="row">
 					<div class="column">
 						<german-invitation></german-invitation>
@@ -81,15 +84,32 @@
 		window.addEventListener("contextmenu", function (e) { e.preventDefault(); }, false);
 
 		function handleClick(e) {
-			if(document.elementFromPoint(e.clientX, e.clientY).className === "controls-arrow") return;
+			if (document.elementFromPoint(e.clientX, e.clientY).className === "controls-arrow") return;
+			if(document.elementFromPoint(e.clientX, e.clientY).className === "navigation") return;
 			e.preventDefault();
 			if (e.button === 0) Reveal.next();
 			if (e.button === 2) Reveal.prev();
 		}
 
-		for(const element of document.getElementsByClassName("name")){
-			element.innerHTML="William";
-		} 
+		const params = new Proxy(new URLSearchParams(window.location.search), {
+			get: (searchParams, prop) => searchParams.get(prop),
+		});
+		let guests = params.guests;
+		if (guests !== null) {
+			let splitGuests = guests.split("-");
+			if (splitGuests.length > 1) {
+				guests = splitGuests[splitGuests.length - 2] + " & " + splitGuests[splitGuests.length - 1];
+			}
+			if (splitGuests.length > 2) {
+				guests = splitGuests.slice(0, splitGuests.length - 2).join(", ") + ", " + guests;
+			}
+		}else{
+			guests = "INSERT_NAME_HERE";
+		}
+
+		for (const element of document.getElementsByClassName("name")) {
+			element.innerHTML = guests;
+		}
 
 	</script>
 </body>
