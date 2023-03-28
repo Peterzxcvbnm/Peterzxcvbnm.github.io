@@ -17,7 +17,7 @@ cozy time.
 <p style="text-align: left;">
 <b>Practical information:</b><br>
 Date: <br>
-October 15th, 2023, 11 am - … <br>
+October 14th, 2023, 11 am - … <br>
 Place: <br>
 Sundeved Centret, Stenderup Kirkebakke 4,<br>
 6400 Sønderborg, Denmark<br>
