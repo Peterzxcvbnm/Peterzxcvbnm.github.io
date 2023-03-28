@@ -16,7 +16,7 @@ Dann können wir zusammen feiern mit hoffentlich leckerem Essen, guter Gesellsch
 <p style="text-align: left;">
 <b>Praktische Informationen:</b><br>
 Datum:<br>
-October 15th, 2023, 11 am - … <br>
+October 14th, 2023, 11 am - … <br>
 Ort: <br>
 Sundeved Centret, Stenderup Kirkebakke 4, <br>
 6400 Sønderborg, Dänemark <br>
