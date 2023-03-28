@@ -15,7 +15,7 @@ Derfor inviterer vi hermed du/I til starten på vores rejse (også kaldet ægtes
 <p style="text-align: left;">
 <b>Praktisk information:</b><br>
 Dato: <br>
-15. oktober 2023 11 - … <br>
+14. oktober 2023 11 - … <br>
 Sted: <br> 
 Sundeved Centret, Stenderup Kirkebakke 4, <br>
 6400 Sønderborg, Danmark <br>
